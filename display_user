@@ -1,0 +1,10 @@
+---
+- hosts: all
+  collections:
+   - ibm.power_ibmi
+
+  tasks:
+  - name: test compliance check
+    ibmi_user_and_group:
+      operation: 'display'
+      user: 'zhouyu1'
